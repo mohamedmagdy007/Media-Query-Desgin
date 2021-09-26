@@ -24,6 +24,7 @@ html{
     line-height: 3.1;
     cursor: pointer;
     display:none ;
+    z-index: 1000;
 }
 .show{
 display: inline;

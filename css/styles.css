@@ -46,8 +46,7 @@ font-size: 1.5rem;
 #nav .frame ul {
     list-style-type: none;
 }
-#nav .frame div:last-child ul:first-child{
-    
+#nav .frame .navbar-toggle{
     color: white;
     border: 1px solid #fff;
     padding: 0 7px; 
@@ -55,26 +54,39 @@ font-size: 1.5rem;
     border-radius: 3px;
 } 
 
-#nav .frame{
+.navbar-header{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
-#nav .frame div:last-child ul:last-child {
-  display: none;
+.navbar-collapse{
+    display: block;
+    padding-bottom: 10px;
+    color: white;
 }
-
-#nav .frame div:first-child{
+.close{
+    display: none;
+}
+.navbar-collapse li{
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+.navbar-collapse li:hover{
+  color: #ccc;
+}
+#nav .frame .navbar-brand{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#nav .frame div:first-child h1{
+#nav .frame .navbar-brand h1{
     color: white;
     font-style: italic;
     text-transform: uppercase;
     margin-bottom: 0;
 }
-#nav .frame div:first-child p {
+#nav .frame .navbar-brand p {
     color: #999;
     font-size: .8rem;
 }
@@ -258,7 +270,7 @@ background-position: center center;
     background-color: #222533;
     text-align: center;
     padding: 10px;
-    color: #555;
+    color: #ffcb0f;
     border-radius: 5px;
   }
 
@@ -590,21 +602,26 @@ footer{
     #info .frame ul a{
         font-size: 1rem;
     }
-    #nav .frame div:last-child ul:last-child{
+    #nav .frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav .frame .navbar-toggle{
+        display: none;
+    }
+    .navbar-collapse{
+        display: flex;
+    }
+    #nav .frame .navbar{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    #nav .frame div:last-child ul:first-child{ 
-       display: none;
-    }
-    #nav .frame div:last-child ul:last-child li{
+    #nav .frame .navbar li{
         margin-left: 18px;
         color:  #ccc;
         display: block;
-    }
-    #nav .show {
-        display: flex !important;
     }
     #banner{
         padding-bottom: 132px;

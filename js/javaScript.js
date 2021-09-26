@@ -1,5 +1,4 @@
 function myFunction(){
-    var navber =document.getElementById("navbar");
-    navber.classList.toggle("show")
-
+    var navber = document.querySelector(".navbar-collapse");
+    navber.classList.toggle("close");
 }

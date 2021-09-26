@@ -12,6 +12,26 @@ html{
     max-width: 100%;
     height: auto;    
 }
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: 16px;
+    background-color: #ffcb0f;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 3.1;
+    cursor: pointer;
+    display:none ;
+}
+.show{
+display: inline;
+}
+.up i{
+    font-size: 24px;
+    color: #222533;
+}
 .frame {
 	max-width:100%;
 	padding-left: 15px;
@@ -61,12 +81,13 @@ font-size: 1.5rem;
     align-items: center;
 }
 .navbar-collapse{
-    display: block;
+    
+    display: none;
     padding-bottom: 10px;
     color: white;
 }
 .close{
-    display: none;
+    display: block;
 }
 .navbar-collapse li{
     padding: 5px 0;
